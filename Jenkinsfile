@@ -32,7 +32,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 sh 'docker rm -f even-odd-container || true'
-                sh 'docker run -d -p 5000:5000 --name even-odd-container even-odd-app'
+                sh 'docker run -d -p 5003:5003 --name even-odd-container even-odd-app'
             }
         }
     }
