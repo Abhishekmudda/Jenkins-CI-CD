@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/even-odd-checker.git'
+                git branch: 'main', url: 'https://github.com/Abhishekmudda/Jenkins-CI-CD.git'
             }
         }
 
